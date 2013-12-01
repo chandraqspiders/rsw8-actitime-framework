@@ -58,7 +58,8 @@ public class BaseClass {
 		System.out.println("Login to application");
 		driver.findElement(By.name("username")).sendKeys(un);
 		driver.findElement(By.name("pwd")).sendKeys(pw);
-		driver.findElement(By.id("loginButton")).click();		
+		driver.findElement(By.id("loginButton")).click();	
+		//Verify if login is successful
 		String expectedText = "Enter Time-Track";
 		String actualText = driver.findElement(By.xpath("//table[@class='noprint']/tbody/tr[1]/td[1]")).getText();
 		Assertions.assertText(expectedText, actualText, "Login successful");				

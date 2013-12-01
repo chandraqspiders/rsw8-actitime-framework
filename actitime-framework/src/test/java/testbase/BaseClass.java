@@ -29,6 +29,7 @@ public class BaseClass {
 		String browser = xllib.getExcelData("Config",1, 0);
 		String url = xllib.getExcelData("Config",1, 1);
 		System.out.println("Launch "+browser+" and open "+url);
+		//Compare the browser string an launch the respective browser
 		if(browser.equals("firefox")){
 			driver = new FirefoxDriver();
 		}

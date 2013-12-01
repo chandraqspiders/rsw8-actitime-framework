@@ -1,0 +1,8 @@
+<suite name="tasks">
+  <test verbose="2" name="tasks">
+    <classes>
+      <class name="tasks.CreateCustomer"/>
+      <class name="tasks.DeleteCustomer"/>      
+    </classes>
+  </test>
+</suite>

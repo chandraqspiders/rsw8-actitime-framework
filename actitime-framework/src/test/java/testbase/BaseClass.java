@@ -25,6 +25,7 @@ public class BaseClass {
 	@BeforeClass
 	public void launchApplication(){		
 		xllib = new ExcelLibrary();		
+		//Get browser and URL from Config sheet in data.xlsx
 		String browser = xllib.getExcelData("Config",1, 0);
 		String url = xllib.getExcelData("Config",1, 1);
 		System.out.println("Launch "+browser+" and open "+url);

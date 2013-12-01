@@ -19,7 +19,7 @@ public class CreateCustomer extends BaseClass{
 		driver.findElement(By.name("name")).sendKeys(custName);
 		driver.findElement(By.name("description")).sendKeys(custDesc);
 		driver.findElement(By.name("createCustomerSubmit")).click();
-		
+		//Verify if customer is created successfully
 		String expectedMsg = "Customer \""+custName+"\" has been successfully created.";
 		String actualMsg = driver.findElement(By.className("successmsg")).getText();
 		Assertions.assertText(expectedMsg, actualMsg, "Customer created successfully");
